@@ -3,12 +3,22 @@
 body {
     padding: 0;
     margin: 0;
-    height: 100%;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
 /* Header top bar */
+
+.butts-foro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-inquiry,
+.btn-tds {
+    margin-right: 10px;
+}
+
 
 .top-bar {
     height: 120px;
@@ -139,7 +149,7 @@ body {
 
 .who-we-are {
     padding: 50px 0;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .who-we-are-content {
@@ -303,6 +313,8 @@ section.quality-section {
 .product-img {
 
     border-radius: 14px;
+    width: 100%;
+    height: auto;
 }
 
 .product-img-vertical {
@@ -595,6 +607,7 @@ section.certificate-section {
     }
 }
 
+
 .funfun {
     background: #0985AD14;
     border-radius: 12px;
@@ -613,6 +626,12 @@ section.certificate-section {
 
     .client-single.active {
         width: 60%;
+    }
+
+    .product-gallary.d-flex.justify-content-center.gap-5 {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .client-single:not(.active) {
@@ -1658,11 +1677,11 @@ button.btn.btn-primary.btn-indusryf {
     color: rgba(14, 52, 69, 1);
 }
 
-.contactus-section {
+.ontact-section {
     position: relative;
 }
 
-.contactus-section::after {
+.ontact-section::after {
     content: "";
     position: absolute;
     width: 255px;
@@ -1781,6 +1800,12 @@ button.btn.btn-primary.btn-indusryf {
         top: 250px !important;
     }
 
+    .product-gallary.d-flex.justify-content-center {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
     .product-overview-section::after {
 
         top: -30px !important;
@@ -1847,6 +1872,12 @@ button.btn.btn-primary.btn-indusryf {
         left: 1% !important;
     }
 
+    .hero-section h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
     .product-detailss {
         margin-top: 20px;
     }
@@ -1875,6 +1906,10 @@ button.btn.btn-primary.btn-indusryf {
     .who-we-are .who-imgg-next:after {
         right: 24px;
         margin-top: 290px;
+    }
+
+    .col-lg-4.col-md-12.col-12.footer-logo {
+        text-align: center;
     }
 
 }
