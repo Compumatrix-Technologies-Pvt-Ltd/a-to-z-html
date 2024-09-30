@@ -908,7 +908,7 @@ section.certificate-section {
 
 .about-banner-section {
     position: relative;
-    background: url('/assets/images/about-banner.jpg') no-repeat center center/cover;
+    background: url('assets/images/about-banner.jpg') no-repeat center center/cover;
     height: 650px;
     color: white;
 }
@@ -1024,7 +1024,7 @@ p.maani-text {
 
 .our-product-section {
     position: relative;
-    background: url('/assets/images/product-banner.jpg') no-repeat center center/cover;
+    background: url('assets/images/product-banner.jpg') no-repeat center center/cover;
     height: 650px;
     color: white;
 }
@@ -1536,7 +1536,7 @@ h2.modal-title {
 
 .our-industry-section {
     position: relative;
-    background: url('/assets/images/industry-banner.jpeg') no-repeat center center/cover;
+    background: url('assets/images/industry-banner.jpeg') no-repeat center center/cover;
     height: 650px;
     color: white;
 }
@@ -1608,7 +1608,7 @@ button.btn.btn-primary.btn-indusryf {
 
 .contact-us-section {
     position: relative;
-    background: url('/assets/images/contact-banner.jpg') no-repeat center center/cover;
+    background: url('assets/images/contact-banner.jpg') no-repeat center center/cover;
     height: 650px;
     color: white;
 }
