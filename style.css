@@ -208,7 +208,7 @@ h2.who-we-are-title {
     position: absolute;
     width: 255px;
     height: 217px;
-    background-image: url("/assets/images/who-dots.png");
+    background-image: url("assets/images/who-dots.png");
     background-size: contain;
     background-repeat: no-repeat;
     right: 155px;
@@ -228,7 +228,7 @@ h2.who-we-are-title {
     position: absolute;
     width: 255px;
     height: 217px;
-    background-image: url("/assets/images/who-dots2.png");
+    background-image: url("assets/images/who-dots2.png");
     background-size: contain;
     background-repeat: no-repeat;
     left: 250px;
@@ -361,26 +361,26 @@ section.quality-section {
 
 .product-overview-section {
     position: relative;
+    padding: 60px 0px;
 }
 
 .product-overview-section::after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 28px;
     left: 3%;
-    background-image: url('/assets/images/dots3.png');
+    background-image: url(assets/images/dots3.png);
     width: 90px;
-    height: 275px;
+    height: 335px;
     background-size: cover;
     opacity: 0.5;
-    z-index: -1;
 }
 
 .product-gallary::after {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 50px;
+    right: -55px;
     top: 70%;
     background-image: url(/assets/images/dots3.png);
     width: 90px;
@@ -440,7 +440,7 @@ section.certificate-section {
 
 .testi-title::after {
     content: "";
-    background-image: url('/assets/images/quote.png');
+    background-image: url('assets/images/quote.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -1677,24 +1677,141 @@ button.btn.btn-primary.btn-indusryf {
     color: rgba(14, 52, 69, 1);
 }
 
-.ontact-section {
+.contactus-section {
     position: relative;
+    overflow: hidden;
 }
 
-.ontact-section::after {
-    content: "";
+.contactus-section::after {
+    content: '';
     position: absolute;
-    width: 255px;
-    height: 217px;
-    background-image: url("/assets/images/contact-bgs3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 155px;
-    top: 370px;
+    top: 0;
+    left: 0;
+    right: 55px;
+    bottom: 0;
+    background-image: url('assets/images/contact-bgs3.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.contactus-section .container {
+    position: relative;
+    z-index: 15;
+}
+
+.contactus-section::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: 0; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: 100%;
+    background-image: url('assets/images/contact-bgs4.png'); 
+    background-size: cover; /* Ensure it covers the section */
+    background-position: center; /* Center the image */
+    opacity: 0.5; /* Adjust opacity as needed */
+    z-index: 0; /* Ensure it's behind the content */
 }
 
 
 /* <<<<<<<<<<<Contact us End>>>>>>>>>>>>>>> */
+
+
+/* <<<<<<<<<<<Career Start>>>>>>>>>>>>>>> */
+
+.career-section {
+    position: relative;
+    background: url('assets/images/career-bg.jpeg') no-repeat center center/cover;
+    height: 650px;
+    color: white;
+}
+
+section.careerss-section {
+    padding: 60px 0;
+}
+
+.careerss h2 {
+    color: rgba(14, 52, 69, 1);
+    font-weight: 700;
+}
+
+.careerss h5 {
+    color: rgba(89, 89, 89, 1);
+    font-weight: 700;
+}
+
+.careerss p {
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.join-team-section {
+    background-color: #f0fbff;
+    padding: 60px 0;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.job-card h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.job-card p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.apply-btn {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #0077cc;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+.divider h4 {
+    background-color: #f0fbff;
+    padding: 0 15px;
+    display: inline-block;
+    color: #003366;
+    font-weight: bold;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .job-card {
+        margin-bottom: 30px;
+    }
+
+    .divider h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* <<<<<<<<<<<Career End>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<Footer Start>>>>>>>>>>>>>>> */
 
