@@ -2030,3 +2030,17 @@ section.careerss-section {
     }
 
 }
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+.who-we-are .who-imgg:after {
+    right: 110px !important;
+    top: 300px !important;
+}
+
+.product-container.main-image {
+    height: 100%;
+}
+
+}
