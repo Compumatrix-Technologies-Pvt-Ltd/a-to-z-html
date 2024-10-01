@@ -7,10 +7,60 @@
     <title>Careers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/faqs/faq-3/assets/css/faq-3.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="style.css">
     <!-- AOS Animation CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
 
+    <style>
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .modal-content {
+            height: 100vh;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-body {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .custom-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .file-upload {
+            border: 1px solid #ced4da;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -97,46 +147,246 @@
     </section>
 
 
-    <section class="join-team-section">
-        <div class="container text-center">
-            <h2 class="mb-3">Join the team. Inspire the Work.</h2>
-            <p class="mb-5">To evolve with innovations, be adaptive and creating solutions through technology and
-                strategy is what blends into transpiring pieces of work we do together. There are plenty of areas to
-                collaborate on - irrespective of your demography. We're always keen on working with inclusion, freedom,
-                and responsibility.</p>
+    <section class="join-team-section" style="background-color: #F6F9F3;">
+        <div class="container">
+            <div class="career-secobds text-center">
+                <h2 class="mb-3">Join the team. Inspire the Work.</h2>
+                <p class="mb-5">To evolve with innovations, be adaptive and creating solutions through technology and
+                    strategy is what blends into transpiring pieces of work we do together. There are plenty of areas to
+                    collaborate on - irrespective of your demography. We're always keen on working with inclusion,
+                    freedom, and responsibility.</p>
 
-            <!-- Divider with "Actively looking for opportunities" -->
-            <div class="divider">
-                <h4>Actively looking For opportunities</h4>
+                <!-- Divider with "Actively looking for opportunities" -->
+                <div class="divider">
+                    <h4>Actively looking For opportunities</h4>
+                </div>
             </div>
 
             <div class="row justify-content-center">
                 <!-- Job 1 -->
-                <div class="col-md-5 job-card">
-                    <h5>Operations Supervisor/ Route Manager</h5>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Pune, Maharashtra</p>
-                    <p><i class="fa fa-suitcase" aria-hidden="true"></i> Operations</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> No. of Openings: 2</p>
-                    <p>As a member of our elite team of mechanics, you will feel like you're a part of something bigger
-                        than yourself.</p>
-                    <button class="apply-btn">Apply now</button>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="job-card">
+                        <h5>Operations Supervisor/ Route Manager</h5>
+                        <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i> Pune,
+                            Maharashtra</p>
+                        <p><i class="fa fa-suitcase" aria-hidden="true" style="margin-right: 10px;"></i> Operations</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i> No. of
+                            Openings: 2</p>
+                        <p class="mt-4 mb-3">As a member of our elite team of mechanics, you will feel like you're a
+                            part of something bigger than yourself.</p>
+                        <button class="apply-btn" data-toggle="modal" data-target="#jobModal">Apply now</button>
+                    </div>
                 </div>
 
                 <!-- Job 2 -->
-                <div class="col-md-5 job-card ms-md-4">
-                    <h5>Billing Specialist</h5>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Pune, Maharashtra</p>
-                    <p><i class="fa fa-suitcase" aria-hidden="true"></i> Accounting</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> No. of Openings: 2</p>
-                    <p>As a member of our elite team of mechanics, you will feel like you're a part of something bigger
-                        than yourself.</p>
-                    <button class="apply-btn">Apply now</button>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="job-card">
+                        <h5>Billing Specialist</h5>
+                        <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i> Pune,
+                            Maharashtra</p>
+                        <p><i class="fa fa-suitcase" aria-hidden="true" style="margin-right: 10px;"></i> Accounting</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i> No. of
+                            Openings: 2</p>
+                        <p class="mt-4 mb-3">As a member of our elite team of mechanics, you will feel like you're a
+                            part of something bigger than yourself.</p>
+                        <button class="apply-btn">Apply now</button>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal structure -->
+    <div class="modal fade for-abfter" id="jobModal" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <!-- Close button at the top -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row">
+                        <!-- Left column with job description (col-5) -->
+                        <div class="col-md-5 d-flex flex-column justify-content-between">
+                            <div class="firstpns">
+                                <h6>Open Vacancies</h6>
+                                <h2>We foster a strong culture of learning and accountability in a collaborative, team
+                                    environment.</h2>
+                            </div>
+
+                            <!-- Footer content aligned at the bottom -->
+                            <div class="bot-frisrone mt-auto">
+                                <p>Our Employees are caretakers of our brands and innovators of our future. We have
+                                    best-in-class products and we seek best-in-class talent.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right column with form (col-7) -->
+                        <div class="col-md-7">
+                            <form class="custom-form apply-kabhibhi">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jobProfile">Job Profile</label>
+                                    <select class="form-control" id="jobProfile">
+                                        <option>Please choose an option</option>
+                                        <option>Developer</option>
+                                        <option>Designer</option>
+                                        <option>Manager</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="resume">Resume</label> <br>
+                                    <input type="file" class="file-upload" id="resume" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="3"
+                                        placeholder="Write your message here"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="quality-section" style="background-color: rgba(210, 227, 235, 1);">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 quality-second bgimage-quality" data-aos="fade-up">
+
+                    <div class="play-text ">
+                        <img src="assets/images/careerimg1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-6 quality-first pb-md-5 aos-init aos-animate" data-aos="fade-up">
+                    <div class="who-we-are-content qulity-check text-center">
+                        <h3 class="careerssd-title text-lg-start">Grow with us</h3>
+                        <p class="careerd-text text-lg-start">
+                            People are the core of everything we do. Aided with all the modern tools and facilities, our
+                            work environment ensures the productivity and vibe never goes away. We all have realized
+                            life is more than just about working. We respect that and have all the necessary procedures
+                            and flexibilities to ensure you ALSO take care of your family and personal commitments.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            Get yourself heard if you believe that you can add value with your passion, creativity, and
+                            enthusiasm. 
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
 
+    <section class="bsb-faq-3 py-3 py-md-5 py-xl-8" style="background-color: #F6F9F3;">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-4 display-5 text-center" style="color: #000;font-weight: 600;font-family: 'Figtree';">
+                        FAQs</h2>
+                </div>
+            </div>
+        </div>
 
+        <div class="mb-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-xl-10">
+                        <div class="accordion accordion-flush" id="faqAccount">
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading1">
+                                    <button class="accordion-button collapsed bg-transparent" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse1"
+                                        data-bs-parent="#faqAccount">
+                                        How does the recruitment process at A to Z work?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse1" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading1" data-bs-parent="#faqAccount">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                                            laboriosam fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading2">
+                                    <button class="accordion-button collapsed bg-transparent" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse2"
+                                        data-bs-parent="#faqAccount">
+                                        What if i get error while applying?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse2" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading2" data-bs-parent="#faqAccount">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                                            laboriosam fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading3">
+                                    <button class="accordion-button collapsed bg-transparent" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse3"
+                                        data-bs-parent="#faqAccount">
+                                        How do i get notified my job application is received by you?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse3" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading3" data-bs-parent="#faqAccount">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                                            laboriosam fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-bottom py-3">
+                                <h2 class="accordion-header" id="faqAccountHeading4">
+                                    <button class="accordion-button collapsed bg-transparent" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse4"
+                                        aria-expanded="false" aria-controls="faqAccountCollapse4"
+                                        data-bs-parent="#faqAccount">
+                                        What documents do i need to submit for applying online?
+                                    </button>
+                                </h2>
+                                <div id="faqAccountCollapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="faqAccountHeading4" data-bs-parent="#faqAccount">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                                            laboriosam fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -211,7 +461,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <script>

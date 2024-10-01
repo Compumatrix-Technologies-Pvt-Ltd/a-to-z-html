@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     padding: 0;
@@ -1404,17 +1405,6 @@ span.lispan {
     font-weight: 500;
 }
 
-/* 
-.product-containerne {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.product-details {
-    margin-bottom: auto;
-} */
 
 .product-container.main-image {
     background-color: #fff;
@@ -1705,14 +1695,14 @@ button.btn.btn-primary.btn-indusryf {
     content: '';
     position: absolute;
     top: -60px;
-    right: 0; /* Align to the right */
-    width: 50%; /* Adjust width as needed */
+    right: 0;
+    width: 50%;
     height: 100%;
-    background-image: url('assets/images/contact-bgs4.png'); 
-    background-size: cover; /* Ensure it covers the section */
-    background-position: center; /* Center the image */
-    opacity: 0.5; /* Adjust opacity as needed */
-    z-index: 0; /* Ensure it's behind the content */
+    background-image: url('assets/images/contact-bgs4.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 
@@ -1726,6 +1716,16 @@ button.btn.btn-primary.btn-indusryf {
     background: url('assets/images/career-bg.jpeg') no-repeat center center/cover;
     height: 650px;
     color: white;
+}
+
+.career-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 section.careerss-section {
@@ -1757,28 +1757,47 @@ section.careerss-section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 20px;
 }
 
+.career-secobds h2 {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+}
+
+.career-secobds p {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    padding: 0 30px;
+}
+
 .job-card h5 {
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 15px;
-    color: #003366;
+    color: rgba(0, 93, 170, 1);
 }
 
 .job-card p {
     margin-bottom: 10px;
-    color: #333;
+    color: rgba(74, 74, 74, 1);
+    font-weight: 400;
 }
 
 .apply-btn {
-    background-color: #00aaff;
+    background-color: rgba(40, 149, 196, 1);
     color: #fff;
     border: none;
+    font-weight: 600;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
+}
+
+h3.careerssd-title {
+    color: rgba(14, 52, 69, 1);
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .apply-btn:hover {
@@ -1791,15 +1810,124 @@ section.careerss-section {
     margin: 40px 0;
 }
 
+p.careerd-text.text-lg-start {
+    font-family: "Figtree", sans-serif;
+    color: rgba(14, 52, 69, 1);
+    font-weight: 500;
+    font-size: 17px;
+}
 
 .divider h4 {
-    background-color: #f0fbff;
-    padding: 0 15px;
-    display: inline-block;
-    color: #003366;
-    font-weight: bold;
-    z-index: 1;
+    color: #000000;
+    font-weight: 500;
 }
+
+button.accordion-button {
+    color: rgba(51, 51, 51, 1);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+
+.accordion-body p {
+    color: rgba(165, 166, 182, 1) !important;
+    margin-bottom: 0px !important;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+}
+
+.accordion-header:focus {
+    outline: none !important;
+}
+
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+}
+
+.accordion-button::after {
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+}
+
+form.custom-form.apply-kabhibhi {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid rgba(99, 148, 170, 1);
+}
+
+.bot-frisrone p {
+    margin-top: auto !important;
+    font-weight: 400;
+    color: rgba(138, 138, 138, 1);
+}
+
+.firstpns h6 {
+    color: rgba(66, 98, 113, 1);
+    font-weight: 600;
+}
+
+.firstpns h2 {
+    color: rgba(14, 52, 69, 1);
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
+/* .for-abfter {
+    position: relative;
+} */
+
+.for-abfter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 55px;
+    bottom: 0;
+    background-image: url('assets/images/contact-bgs3.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.contactus-section .container {
+    position: relative;
+    z-index: 15;
+}
+
+.contactus-section::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('assets/images/contact-bgs4.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
 
 @media (max-width: 768px) {
     .job-card {
@@ -2034,13 +2162,13 @@ section.careerss-section {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
 
-.who-we-are .who-imgg:after {
-    right: 110px !important;
-    top: 300px !important;
-}
+    .who-we-are .who-imgg:after {
+        right: 110px !important;
+        top: 300px !important;
+    }
 
-.product-container.main-image {
-    height: 100%;
-}
+    .product-container.main-image {
+        height: 100%;
+    }
 
 }
