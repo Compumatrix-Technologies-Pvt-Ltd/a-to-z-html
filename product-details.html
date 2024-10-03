@@ -7,6 +7,7 @@
     <title>Product details</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- AOS Animation CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -16,14 +17,16 @@
 <body>
 
     <!-- Header Top Bar -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="top-bar d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="assets/images/Logo.svg" alt="Logo">
+                <img src="assets/images/head-logos.png" alt="Logo">
             </div>
             <div>
-                <span class="contact-info"><i class="fa fa-phone"></i> +91 8765 987 546</span>
-                <a href="#" class="btn btn-brochure">Brochure Download</a>
+                <a href="tel:+918765987546" class="contact-info">
+                    <i class="fa fa-phone"></i> +91 8765 987 546
+                </a>
+                <a href="#" class="btn btn-brochure">Download Brochure</a>
             </div>
         </div>
     </div>
@@ -85,23 +88,23 @@
     <!-- Product Section -->
     <section class="product-details spad" style="background-color: #F6F9F3;">
         <div class="container py-5">
-            <div class="breadcrumb__links mb-3">
-                <a href="./index.html" style="color: rgba(123, 123, 123, 1);">Product Listing</a>
+            <div class="breadcrumb__links mb-4">
+                <a href="./index.html" style="text-decoration: none; color: rgba(123, 123, 123, 1);">Product Listing</a>
                 >
-                <a href="#" style="color: rgba(65, 65, 65, 1);">Product Page</a>
+                <a href="#" style="text-decoration: none; color: rgba(65, 65, 65, 1); font-weight: 500;">Product Page</a>
             </div>
             <div class="row">
                 <!-- First Column (Thumbnails) -->
-                <div class="col-lg-2 col-md-4">
+                <div class="col-lg-2 col-md-4 text-center">
                     <div class="product-container">
-                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list1.png')">
-                            <img src="assets/images/prod-list1.png" alt="Thumbnail 1">
+                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list1.jpg')">
+                            <img src="assets/images/prod-list10.jpg" alt="Thumbnail 1">
                         </div>
-                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list7.png')">
-                            <img src="assets/images/prod-list7.png" alt="Thumbnail 2">
+                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list11.png')">
+                            <img src="assets/images/prod-list11.png" alt="Thumbnail 2">
                         </div>
-                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list8.png')">
-                            <img src="assets/images/prod-list8.png" alt="Thumbnail 3">
+                        <div class="thumbnail" onclick="changeImage('/assets/images/prod-list12.png')">
+                            <img src="assets/images/prod-list12.png" alt="Thumbnail 3">
                         </div>
                     </div>
                 </div>
@@ -109,7 +112,7 @@
                 <!-- Second Column (Main Image) -->
                 <div class="col-lg-6 col-md-8">
                     <div class="product-container main-image">
-                        <img src="assets/images/prod-list1.png" alt="Red Double Sided Tape" id="productImage">
+                        <img src="assets/images/prod-list1.jpg" alt="Red Double Sided Tape" id="productImage">
                     </div>
                 </div>
 
@@ -121,11 +124,11 @@
                             <p>We are engaged in offering a wide range of AToZ Gumming Work India Private Limited to our
                                 clients. Our range of all products is widely appreciated by our clients.</p>
                             <ul>
-                                <li>Tap width: <span>3 inch</span></li>
-                                <li>Tap length: <span>50 m</span></li>
-                                <li>Backing Material: <span>Tissue</span></li>
-                                <li>Color: <span>Red</span></li>
-                                <li>Tape type: <span>Adhesive</span></li>
+                                <li>Tap width: <span class="color-dedo">3 inch</span></li>
+                                <li>Tap length: <span class="color-dedo">50 m</span></li>
+                                <li>Backing Material: <span class="color-dedo">Tissue</span></li>
+                                <li>Color: <span class="color-dedo">Red</span></li>
+                                <li>Tape type: <span class="color-dedo">Adhesive</span></li>
                             </ul>
                         </div>
                         <div class="butts-foro">
@@ -142,11 +145,8 @@
 
     <!-- Modal HTML -->
     <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <!-- <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div> -->
                 <div class="modal-body">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="container-fluid">
@@ -229,7 +229,7 @@
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-pro text-center">
-                        <img src="assets/images/similar-pro1.png" alt="">
+                        <img src="assets/images/similar-pro1.jpg" alt="">
                         <div class="sapan mt-3 mb-4">
                             <span>Craft Paper Tape</span>
                         </div>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-pro text-center">
-                        <img src="assets/images/similar-pro2.png" alt="">
+                        <img src="assets/images/similar-pro2.jpg" alt="">
                         <div class="sapan mt-3 mb-4">
                             <span>Fabric Tape</span>
                         </div>
@@ -246,7 +246,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-pro text-center">
-                        <img src="assets/images/similar-pro3.png" alt="">
+                        <img src="assets/images/similar-pro3.jpg" alt="">
                         <div class="sapan mt-3 mb-4">
                             <span>Double Sided Tape</span>
                         </div>
@@ -254,7 +254,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-pro text-center">
-                        <img src="assets/images/similar-pro4.png" alt="">
+                        <img src="assets/images/similar-pro4.jpg" alt="">
                         <div class="sapan mt-3 mb-4">
                             <span>Hdpe Tape</span>
                         </div>
@@ -269,19 +269,16 @@
         <div class="container">
             <div class="row">
                 <!-- Logo and Company Info -->
-                <div class="col-lg-4 col-md-12 col-12 footer-logo">
+                <div class="col-lg-3 col-md-12 col-12 footer-logo">
                     <img src="assets/images/footer-logo.png" alt="AtoZ Logo">
 
-                    <p style="font-weight: 700; margin-top: 20px;color: #595959; padding-right: 20px;">ATOZ Gumming work
+                    <p style="font-weight: 500; margin-top: 20px;color:rgba(255, 255, 255, 1); font-size: 14px;">ATOZ
+                        Gumming work
                         has been established
                         in the year 2020 at Pune. Under the able guidance of our
                         Proprietor Mr.A.S.Marathe.</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <div class="foot-log2">
+                        <img src="assets/images/foot-logo-2.png" alt="AtoZ Logo">
                     </div>
                 </div>
 
@@ -289,43 +286,54 @@
                 <div class="col-lg-2 col-md-3 col-6 footer-columns">
                     <h5>Our Company</h5>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-condition.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-3 col-6 footer-columns">
                     <h5>Our Industries</h5>
                     <ul>
-                        <li><a href="#">Paint Industry</a></li>
-                        <li><a href="#">Automotive Industry</a></li>
-                        <li><a href="#">Electrical Industry</a></li>
-                        <li><a href="#">FIBC Industry</a></li>
-                        <li><a href="#">HVAC Repair</a></li>
-                        <li><a href="#">Packaging</a></li>
-                        <li><a href="#">Construction</a></li>
+                        <li><a href="industry.html">Paint Industry</a></li>
+                        <li><a href="industry.html">Automotive Industry</a></li>
+                        <li><a href="industry.html">Electrical Industry</a></li>
+                        <li><a href="industry.html">FIBC Industry</a></li>
+                        <li><a href="industry.html">HVAC Repair</a></li>
+                        <li><a href="industry.html">Packaging</a></li>
+                        <li><a href="industry.html">Construction</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-3 col-6 footer-columns">
                     <h5>Our Products</h5>
                     <ul>
-                        <li><a href="#">Double Side tape</a></li>
-                        <li><a href="#">Fabric tape</a></li>
-                        <li><a href="#">Tissue tape</a></li>
-                        <li><a href="#">Hdpe tape</a></li>
-                        <li><a href="#">Adhesive tape</a></li>
-                        <li><a href="#">Polyster tape</a></li>
-                        <li><a href="#">Packaging tape</a></li>
+                        <li><a href="product-page.html">Double Side tape</a></li>
+                        <li><a href="product-page.html">Fabric tape</a></li>
+                        <li><a href="product-page.html">Tissue tape</a></li>
+                        <li><a href="product-page.html">Hdpe tape</a></li>
+                        <li><a href="product-page.html">Adhesive tape</a></li>
+                        <li><a href="product-page.html">Polyster tape</a></li>
+                        <li><a href="product-page.html">Packaging tape</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-6 footer-info">
+                <div class="col-lg-3 col-md-3 col-6 footer-info">
                     <h5>Get in Touch</h5>
                     <p>1st And 2nd Floor, Atoz Gumming Work India Pvt Ltd, Varale Mahalunge Road, Sr No. 29/2, Chakan
                         MIDC, Pune-410501, Maharashtra, India</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sharer.php?u=https://www.indiamart.com/atozgummingworkindia/"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/share?url=https://www.indiamart.com/atozgummingworkindia/"
+                            target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/cws/share?url=https://www.indiamart.com/atozgummingworkindia/"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
