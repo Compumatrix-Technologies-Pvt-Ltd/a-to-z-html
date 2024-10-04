@@ -34,7 +34,7 @@
 
         .product-container img {
             object-fit: contain;
-            /* Ensures the image fits within the container without stretching */
+
         }
 
         .product-container.main-image img {
@@ -44,12 +44,17 @@
 
         }
 
+        /* .product-container {
+            max-height: 400px;
+            overflow-y: auto;
+        } */
+
         .thumbnail img {
             height: auto;
             width: 100%;
             background-color: #fff;
             max-height: 148px;
-            /* Adjust height for thumbnail images */
+
         }
 
         .form-control {
@@ -60,14 +65,19 @@
         @media (max-width: 768px) {
             .product-container.main-image img {
                 height: 480px;
-                
-                /* Adjust height for smaller screens */
+
             }
 
             .form-control {
-            width: 100% !important;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.14);
+                width: 100% !important;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.14);
+            }
         }
+
+        .product-container.fiasest {
+            max-height: 490px;
+            overflow-y: scroll;
+            scrollbar-width: none;
         }
     </style>
 
@@ -80,7 +90,7 @@
         <div class="top-bar d-flex justify-content-between align-items-center">
             <div class="logo">
                 <a href="index.html">
-                <img src="assets/images/head-logos.png" alt="Logo">
+                    <img src="assets/images/head-logos.png" alt="Logo">
                 </a>
             </div>
             <div>
@@ -158,7 +168,7 @@
             <div class="row">
                 <!-- First Column (Thumbnails) -->
                 <div class="col-lg-2 col-md-4 text-center order-2 order-sm-1">
-                    <div class="product-container">
+                    <div class="product-container fiasest">
                         <div class="thumbnail" onclick="changeImage('assets/images/prod-list1.jpg')">
                             <img src="assets/images/prod-list10.jpg" alt="Thumbnail 1" class="for-mobilecs w-100">
                         </div>
@@ -168,6 +178,10 @@
                         <div class="thumbnail" onclick="changeImage('assets/images/prod-list12.png')">
                             <img src="assets/images/prod-list12.png" alt="Thumbnail 3" class="for-mobilecs w-100">
                         </div>
+                        <div class="thumbnail" onclick="changeImage('assets/images/prod-list12.png')">
+                            <img src="assets/images/prod-list12.png" alt="Thumbnail 4" class="for-mobilecs w-100">
+                        </div>
+
                     </div>
                 </div>
 
@@ -336,7 +350,7 @@
                 <!-- Logo and Company Info -->
                 <div class="col-lg-3 col-md-12 col-12 footer-logo">
                     <a href="index.html">
-                    <img src="assets/images/footer-logo.png" alt="AtoZ Logo">
+                        <img src="assets/images/footer-logo.png" alt="AtoZ Logo">
                     </a>
 
                     <p style="font-weight: 500; margin-top: 20px;color:rgba(255, 255, 255, 1); font-size: 14px;">ATOZ

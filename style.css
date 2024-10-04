@@ -2028,6 +2028,13 @@ form.custom-form.apply-kabhibhi {
         right: 4%;
     }
 
+
+    .who-we-are .who-imgg:after{
+        display: none;
+    }
+
+    
+
     .top-bar .contact-info i {
         font-size: 10px !important;
     }
@@ -2303,6 +2310,13 @@ form.custom-form.apply-kabhibhi {
 
 }
 
+@media (min-width: 1279px) and (max-width: 1280px) {
+
+.who-we-are .who-imgg-next:after {
+    left: 165px !important;
+}
+
+}
 
 
 .circle-image img {
