@@ -401,6 +401,10 @@ section.quality-section {
     width: 100%;
 }
 
+img.for-mobilecs {
+    height: 171px;
+}
+
 .product-overview-section {
     position: relative;
     padding: 60px 0px;
@@ -1165,7 +1169,7 @@ label.form-check-label {
 }
 
 .main-image img {
-    width: 100%;
+    /* width: 100%; */
     height: 97%;
     border-radius: 15px;
     border: 1px solid rgba(191, 191, 191, 1);
@@ -1294,10 +1298,10 @@ span.lispan {
 /* .similar-pro:hover {
     transform: scale(1.1);
 } */
-
+/* 
 .product-detailss {
     margin-top: 75px;
-}
+} */
 
 .firstclass-test {
     padding: 30px 40px;
@@ -1373,7 +1377,11 @@ h2.modal-title {
 }
 
 .namefields.mb-4 {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.14);
+    /* box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.14); */
+}
+
+.accordion-body {
+    padding: 0px 20px;
 }
 
 /* <<<<<<<<<<<Our Product-Details End>>>>>>>>>>>>>>> */
@@ -1922,6 +1930,7 @@ form.custom-form.apply-kabhibhi {
 
     .product-container.main-image {
         height: auto;
+        padding: 0 25px;
     }
 
     .product-gallary.d-flex.justify-content-center {
@@ -1939,12 +1948,12 @@ form.custom-form.apply-kabhibhi {
 
     }
 
-    img.prod-mad.mb-4 {
+    /* img.prod-mad.mb-4 {
         height: auto !important;
-    }
+    } */
 
-    .content p {
-        padding: 18px 15px;
+    .about-pic-container.for-chipking {
+        margin-top: 20px;
     }
 
     .product-gallary::after {
@@ -1989,9 +1998,10 @@ form.custom-form.apply-kabhibhi {
         margin-bottom: 25px;
     }
 
+    /* 
     .product-detailss {
         margin-top: 20px;
-    }
+    } */
 
     .back-rounded-all {
         display: none;
@@ -2029,8 +2039,24 @@ form.custom-form.apply-kabhibhi {
         padding: 10px 10px;
     }
 
+    .product-container {
+        margin-top: 20px;
+    }
+
+    .product-container.main-image img {
+        height: 220px !important;
+    }
+
     .contact-section {
         padding: 25px;
+    }
+
+    .product-detailss {
+        margin-top: 35px !important;
+    }
+
+    .thumbnail img {
+        width: 70% !important;
     }
 
     .contact-boots {
@@ -2122,9 +2148,9 @@ form.custom-form.apply-kabhibhi {
         line-height: 40px;
     }
 
-    .product-detailss {
+    /* .product-detailss {
         margin-top: 20px;
-    }
+    } */
 
     .carousel-indicators {
         bottom: 0px !important;
