@@ -21,7 +21,7 @@ body {
 }
 
 .upper-prod.position-relative {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .top-bar {
@@ -88,7 +88,7 @@ body {
     height: 600px;
     color: white;
     padding: 50px 0;
-    background-image: url(/assets/images/Background.png);
+    background-image: url(assets/images/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -779,6 +779,7 @@ span.color-dedo {
 .head-title-f h1 {
     font-weight: 700;
     color: #333333;
+    font-size: 38px;
 }
 
 .timeline-item {
@@ -1824,7 +1825,7 @@ form.custom-form.apply-kabhibhi {
 .footer p {
     font-size: 14px;
     color: rgba(234, 244, 249, 1);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     margin-top: 30px;
 }
@@ -1997,7 +1998,7 @@ form.custom-form.apply-kabhibhi {
     }
 
     .carousel {
-        margin-top: 10px;
+        margin-top: 40px;
         padding: 10px;
     }
 
@@ -2016,8 +2017,16 @@ form.custom-form.apply-kabhibhi {
         right: 4%;
     }
 
+    .top-bar .contact-info i {
+        font-size: 10px !important;
+    }
+
     .induss-bonk p {
         height: auto;
+    }
+
+    .firstclass-test {
+        padding: 10px 10px;
     }
 
     .contact-section {
@@ -2142,6 +2151,10 @@ form.custom-form.apply-kabhibhi {
         left: -3px;
     }
 
+    .content p {
+        text-align: center !important;
+    }
+
     .bottom-center-backg {
         bottom: -40px;
         right: 140px;
@@ -2243,7 +2256,7 @@ form.custom-form.apply-kabhibhi {
     }
 
     .testimonials-section::before {
-        right: 11%;
+        right: 20%;
     }
 
     .product-overview-section::after {
@@ -2254,6 +2267,11 @@ form.custom-form.apply-kabhibhi {
     .product-gallary::after {
         right: -55px;
         height: 245px;
+    }
+
+    .bottom-center-backg {
+        bottom: -30px;
+        right: 260px;
     }
 
 }
