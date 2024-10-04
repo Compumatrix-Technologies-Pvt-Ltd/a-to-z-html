@@ -25,6 +25,18 @@
     <style>
         .modal-header {
             border-bottom: none;
+            padding: 5px;
+        }
+
+
+        button.close {
+            border: none !important;
+            background: none !important;
+            font-size: 25px;
+        }
+
+        .modal-header {
+            justify-content: end !important;
         }
 
 
@@ -32,6 +44,7 @@
             /* height: 100vh; */
             border-radius: 0;
             display: flex;
+            border: none;
             flex-direction: column;
         }
 
@@ -67,13 +80,38 @@
             padding: 10px;
             border-radius: 5px;
         }
+
+        @media (min-width: 320px) and (max-width: 500px) {
+        .modal-body {
+            flex: 1;
+            padding: 0px !important;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+    padding: 0px !important;
+}
+
+        .modal-body {
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+        }
+
+        .modal-body {
+            max-height: 100vh;
+            overflow-y: auto;
+            /* padding-right: 0px; */
+        }
+
+    }
     </style>
 </head>
 
 <body>
 
     <!-- Header Top Bar -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="background: #F1F6F8;">
         <div class="top-bar d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="assets/images/head-logos.png" alt="Logo">
@@ -175,12 +213,30 @@
                 <!-- Job 1 -->
                 <div class="col-12 col-md-6 mb-4">
                     <div class="job-card">
+
                         <h5>Operations Supervisor/ Route Manager</h5>
-                        <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i> Pune,
-                            Maharashtra</p>
-                        <p><i class="fa fa-suitcase" aria-hidden="true" style="margin-right: 10px;"></i> Operations</p>
-                        <p><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i> No. of
-                            Openings: 2</p>
+
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/location-kala.png" alt="">
+                            </div>
+                            <p> Pune,
+                                Maharashtra</p>
+                        </div>
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/operations.png" alt="">
+                            </div>
+                            <p>Operations</p>
+                        </div>
+
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/optionss.png" alt="">
+                            </div>
+                            <p> No. of
+                                Openings: 2</p>
+                        </div>
                         <p class="mt-4 mb-3">As a member of our elite team of mechanics, you will feel like you're a
                             part of something bigger than yourself.</p>
                         <button class="apply-btn" data-toggle="modal" data-target="#jobModal">Apply now</button>
@@ -191,11 +247,27 @@
                 <div class="col-12 col-md-6 mb-4">
                     <div class="job-card">
                         <h5>Billing Specialist</h5>
-                        <p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i> Pune,
-                            Maharashtra</p>
-                        <p><i class="fa fa-suitcase" aria-hidden="true" style="margin-right: 10px;"></i> Accounting</p>
-                        <p><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i> No. of
-                            Openings: 2</p>
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/location-kala.png" alt="">
+                            </div>
+                            <p> Pune,
+                                Maharashtra</p>
+                        </div>
+
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/operations.png" alt="">
+                            </div>
+                            <p> Accounting</p>
+                        </div>
+                        <div class="adress d-flex gap-2 mb-2">
+                            <div class="contact-lok">
+                                <img src="assets/images/optionss.png" alt="">
+                            </div>
+                            <p> No. of
+                                Openings: 2</p>
+                        </div>
                         <p class="mt-4 mb-3">As a member of our elite team of mechanics, you will feel like you're a
                             part of something bigger than yourself.</p>
                         <button class="apply-btn">Apply now</button>
@@ -217,7 +289,7 @@
                 </div>
                 <div class="modal-body container">
                     <div class="row">
-                        <div class="col-md-5 d-flex flex-column justify-content-between">
+                        <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-between">
                             <div class="firstpns">
                                 <h6>Open Vacancies</h6>
                                 <h2>We foster a strong culture of learning and accountability in a collaborative, team
@@ -230,7 +302,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-7">
+                        <div class="col-lg-7 col-md-12">
                             <form class="custom-form apply-kabhibhi">
                                 <div class="form-group">
                                     <label for="name">Name</label>
@@ -273,9 +345,9 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-6 col-md-12 quality-second bgimage-quality" data-aos="fade-up">
+                <div class="col-lg-6 col-md-12 quality-second bgimage-qualitdy" data-aos="fade-up">
 
-                    <div class="play-text ">
+                    <div class="play-text">
                         <img src="assets/images/careerimg1.png" alt="">
                     </div>
                 </div>

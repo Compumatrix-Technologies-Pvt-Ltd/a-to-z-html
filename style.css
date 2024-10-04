@@ -113,7 +113,7 @@ body {
 .carousel-inner {
     position: relative;
     width: 100%;
-    margin-top: -50px;
+    margin-top: -100px;
     overflow: hidden;
 }
 
@@ -254,6 +254,15 @@ h2.who-we-are-title {
 
 }
 
+.carousel-inner.new-carousel-inner {
+    margin-top: -50px !important;
+    padding: 40px 40px;
+}
+
+
+.carousel-indicators {
+    bottom: 50px !important;
+}
 
 /* <<<<<<<<< Who We Are End>>>>>>>>>>>>>>> */
 
@@ -270,7 +279,7 @@ h2.who-we-are-title {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
     /* Adjust the opacity for the black strip */
     z-index: 1;
 }
@@ -334,13 +343,13 @@ section.quality-section {
 /* <<<<<<<<<<<Product Overview >>>>>>>>>>>>>>> */
 
 .product-ove h2 {
-    color: #273942;
+    color: rgba(14, 52, 69, 1);
     font-weight: 700;
 }
 
 
 .product-ove p {
-    color: #426271;
+    color: rgba(14, 52, 69, 1);
 }
 
 .product-img {
@@ -593,7 +602,7 @@ section.certificate-section {
 }
 
 .carousel-indicators.new-carousel-indicators {
-    bottom: -40px;
+    bottom: -40px !important;
 }
 
 .carousel-indicators.new-carousel-indicators li,
@@ -1888,12 +1897,16 @@ form.custom-form.apply-kabhibhi {
     }
 
     .carousel-inner {
-        margin-top: 0px;
+        margin-top: 0px !important;
         padding: 5px !important;
     }
 
     .carousel-indicators {
-        bottom: 0px;
+        bottom: 0px !important;
+    }
+
+    .hero-section {
+        padding: 30px 0;
     }
 
     .who-we-are .who-imgg-next:after {
@@ -1959,11 +1972,11 @@ form.custom-form.apply-kabhibhi {
 
     .top-bar .contact-info,
     .top-bar .btn-brochure {
-        font-size: 0.7rem !important;
+        font-size: 0.6rem !important;
     }
 
     .top-bar .btn-brochure {
-        font-size: 0.7rem !important;
+        font-size: 0.6rem !important;
         padding: 10px 2px;
     }
 
@@ -2011,6 +2024,12 @@ form.custom-form.apply-kabhibhi {
         padding: 25px;
     }
 
+    .contact-boots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
@@ -2018,7 +2037,7 @@ form.custom-form.apply-kabhibhi {
 
     .carousel-inner {
 
-        margin-top: 0px;
+        margin-top: 0px !important;
     }
 
     .col-md-5.quality-first,
@@ -2099,7 +2118,7 @@ form.custom-form.apply-kabhibhi {
     }
 
     .carousel-indicators {
-        bottom: 0px;
+        bottom: 0px !important;
     }
 
     .quality-section .row {
@@ -2115,7 +2134,7 @@ form.custom-form.apply-kabhibhi {
     }
 
     .testi-title::after {
-        left: -14%;
+        left: -22%;
     }
 
     .bottom-left-backg {
@@ -2194,12 +2213,24 @@ form.custom-form.apply-kabhibhi {
 @media (min-width: 1200px) and (max-width: 1400px) {
 
     .who-we-are .who-imgg:after {
-        right: 110px !important;
+        right: 175px !important;
         top: 300px !important;
     }
 
     .product-container.main-image {
         height: 100%;
+    }
+
+    testi-title::after {
+        left: 1%;
+    }
+
+    .who-we-are .who-imgg-next:after {
+        left: 190px;
+    }
+
+    .testi-title::after {
+        left: 1% !important;
     }
 
     .top-bar {
@@ -2217,11 +2248,11 @@ form.custom-form.apply-kabhibhi {
 
     .product-overview-section::after {
         left: 1%;
-        height: 316px;
+        height: 245px;
     }
 
     .product-gallary::after {
-        right: -100px;
+        right: -55px;
         height: 245px;
     }
 
