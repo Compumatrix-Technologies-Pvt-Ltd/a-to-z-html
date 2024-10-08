@@ -737,6 +737,56 @@ span.color-dedo {
     font-weight: 600;
 }
 
+
+/* Container for the image and circles */
+.circle-image-bg {
+    width: 440px; /* Adjust as per your needs */
+    height: 440px;
+    background-color: #D2E3EB;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+  .circle-image-bg .main-image-about {
+    width: 85%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 45px;
+    bottom: -1px;
+  }
+  
+  .circle-image-bg .small-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #6EA4BD;
+    border-radius: 50%;
+    /* bottom: -20px; */
+    left: 20px;
+    top: 96px;
+    z-index: -1;
+  }
+  
+  .circle-image-bg .dotted-patch {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    width: 135px;
+    height: 135px;
+    /* background: radial-gradient(#D2E3EB 2px, transparent 2px); */
+    background: url('assets/images/about-patch.png') no-repeat center center/cover;
+    /* background-size: 8px 8px; */
+    border-radius: 50%;
+    z-index: 0; 
+  }
+  
+
+
 .breadcrumb {
     background: transparent;
 }
@@ -807,6 +857,7 @@ span.color-dedo {
 
 .content p {
     font-size: 16px;
+    max-width: 500px;
     color: #537B8E;
     text-align: start;
 }
@@ -1929,6 +1980,17 @@ form.custom-form.apply-kabhibhi {
         height: 150px;
     }
 
+    .circle-image-bg .small-circle {
+        left: 16px;
+        top: 70px;
+      
+    }
+
+    .circle-image-bg {
+        width: 330px;
+        height: 330px;
+    }
+
     .product-container.main-image {
         height: auto;
         padding: 0 25px;
@@ -2092,6 +2154,16 @@ form.custom-form.apply-kabhibhi {
 
     .career-section {
         height: 490px;
+    }
+
+    .circle-image-bg {
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-image-bg .small-circle {
+        left: 12px;
+        top: 75px;
     }
 
     .adress p a {
